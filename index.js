@@ -98,11 +98,11 @@ app.post('/api/persons',(request,res) => {
 	res.json(person);
 })
 
-const unknowPoint = (req,res) => {	
-	res.status(404).send({error:'unknow endpoint'});
-}
+// const unknowPoint = (req,res) => {	
+// 	res.status(404).send({error:'unknow endpoint'});
+// }
 
-app.use(unknowPoint);
+// app.use(unknowPoint);
 
 const PORT = 3001;
 app.listen(PORT,() => {
